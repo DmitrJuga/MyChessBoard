@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2470801B2A1FAC007B336A /* DDBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D24707F1B2A1FAC007B336A /* DDBoard.m */; };
+		1D2470831B2A1FD8007B336A /* DDFigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2470821B2A1FD8007B336A /* DDFigure.m */; };
 		1DD8C7891AF8C9FB00B76A1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD8C7881AF8C9FB00B76A1F /* main.m */; };
 		1DD8C78C1AF8C9FB00B76A1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD8C78B1AF8C9FB00B76A1F /* AppDelegate.m */; };
 		1DD8C78F1AF8C9FB00B76A1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD8C78E1AF8C9FB00B76A1F /* ViewController.m */; };
@@ -27,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D24707E1B2A1FAC007B336A /* DDBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBoard.h; sourceTree = "<group>"; };
+		1D24707F1B2A1FAC007B336A /* DDBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBoard.m; sourceTree = "<group>"; };
+		1D2470811B2A1FD8007B336A /* DDFigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFigure.h; sourceTree = "<group>"; };
+		1D2470821B2A1FD8007B336A /* DDFigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFigure.m; sourceTree = "<group>"; };
+		1D2470841B2A2895007B336A /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
 		1DD8C7831AF8C9FB00B76A1F /* MyChessBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChessBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DD8C7871AF8C9FB00B76A1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DD8C7881AF8C9FB00B76A1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D2470851B2A3FF1007B336A /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				1D24707E1B2A1FAC007B336A /* DDBoard.h */,
+				1D24707F1B2A1FAC007B336A /* DDBoard.m */,
+			);
+			name = Board;
+			sourceTree = "<group>";
+		};
+		1D2470861B2A53E8007B336A /* Figure */ = {
+			isa = PBXGroup;
+			children = (
+				1D2470811B2A1FD8007B336A /* DDFigure.h */,
+				1D2470821B2A1FD8007B336A /* DDFigure.m */,
+			);
+			name = Figure;
+			sourceTree = "<group>";
+		};
 		1DD8C77A1AF8C9FA00B76A1F = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +106,15 @@
 		1DD8C7851AF8C9FB00B76A1F /* MyChessBoard */ = {
 			isa = PBXGroup;
 			children = (
+				1D2470841B2A2895007B336A /* AppConstants.h */,
 				1DD8C78A1AF8C9FB00B76A1F /* AppDelegate.h */,
 				1DD8C78B1AF8C9FB00B76A1F /* AppDelegate.m */,
+				1D2470851B2A3FF1007B336A /* Board */,
+				1D2470861B2A53E8007B336A /* Figure */,
 				1DD8C78D1AF8C9FB00B76A1F /* ViewController.h */,
 				1DD8C78E1AF8C9FB00B76A1F /* ViewController.m */,
 				1DD8C7901AF8C9FB00B76A1F /* Main.storyboard */,
 				1DD8C7931AF8C9FB00B76A1F /* Images.xcassets */,
-				1DD8C7951AF8C9FB00B76A1F /* LaunchScreen.xib */,
 				1DD8C7861AF8C9FB00B76A1F /* Supporting Files */,
 			);
 			path = MyChessBoard;
@@ -96,6 +123,7 @@
 		1DD8C7861AF8C9FB00B76A1F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1DD8C7951AF8C9FB00B76A1F /* LaunchScreen.xib */,
 				1DD8C7871AF8C9FB00B76A1F /* Info.plist */,
 				1DD8C7881AF8C9FB00B76A1F /* main.m */,
 			);
@@ -222,6 +250,8 @@
 				1DD8C78F1AF8C9FB00B76A1F /* ViewController.m in Sources */,
 				1DD8C78C1AF8C9FB00B76A1F /* AppDelegate.m in Sources */,
 				1DD8C7891AF8C9FB00B76A1F /* main.m in Sources */,
+				1D2470801B2A1FAC007B336A /* DDBoard.m in Sources */,
+				1D2470831B2A1FD8007B336A /* DDFigure.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +382,7 @@
 				INFOPLIST_FILE = MyChessBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -362,6 +393,7 @@
 				INFOPLIST_FILE = MyChessBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -418,6 +450,7 @@
 				1DD8C7A81AF8C9FB00B76A1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DD8C7A91AF8C9FB00B76A1F /* Build configuration list for PBXNativeTarget "MyChessBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +459,7 @@
 				1DD8C7AB1AF8C9FB00B76A1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
