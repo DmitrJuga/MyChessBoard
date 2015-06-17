@@ -17,17 +17,18 @@
 - Поддерживаются устройства всех размеров, но рекомендуется iPad.
 
 
-## Техническая информация
+## Технические детали
 
 - Всё реализовано в коде, без интерфейс-билдера.
 - Используются кастомные view (наследники `UIView` с переопределёнными `drawRect:` и `layoutSubviews`) для отрисовки доски (класс `DDBoard`) и фигур (класс `DDFigure`).
 - Перемещение фигур реализовано путем обработки касаний (*touch-событий*); методы: `touchesBegan:withEvent:`, `touchesMoved:withEvent:`, `touchesEnded:withEvent:`, `touchesCancelled:withEvent:`).
 - В качестве изображения фигур используется unicode-символы.
+- App Icon (изображение из свободных web-источников).
 
 
 ## Основа проекта
 
-Проект создан на основе моей домашней работы к уроку 2 по курсу **"Objective C. Уровень 2"** в [НОЧУ ДО «Школа программирования» (http://geekbrains.ru)](http://geekbrains.ru/) и доработан после окончания курса. Домашнее задание и пояснения к выполненой работе - см. в [homework_readme.md](https://github.com/DmitrJuga/MyChessBoard/blob/master/homework_readme.md).
+Проект создан на основе моей домашней работы к уроку 2 по курсу **"Objective C. Уровень 2"** в НОЧУ ДО «Школа программирования» ([http://geekbrains.ru](http://geekbrains.ru/users/38648)) и доработан после окончания курса. Домашнее задание и пояснения к выполненой работе - см. в [homework_readme.md](https://github.com/DmitrJuga/MyChessBoard/blob/master/homework_readme.md).
 
 ---
 
